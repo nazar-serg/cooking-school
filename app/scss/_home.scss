@@ -1,0 +1,92 @@
+.banner {
+    background-blend-mode: multiply;
+    background: #EFEDEB url(../img/banner.jpg) no-repeat;
+    min-height: 606px;
+    background-size: cover;
+    &__content {
+        padding-top: 80px;
+    }
+    &__content-title {
+        max-width: 500px;
+    }
+    &__content>*:not(:last-child) {
+        margin: 0px 0px 40px 0px;
+    }
+    &__content-text {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 6px;
+        color: #333333;
+    }
+    &__content-title {
+        font-size: 100px;
+        line-height: calc(100 / 100 * 100%);
+        color: #333333;
+    }
+    &__bottom-link {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        background-image: url(../img/Artboard-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right 0px center;
+        padding: 22px 18px 22px 0px;
+        &:after {
+            content: '\2192';
+            margin-left: 6px;
+            font-size: 18px;
+        }
+    }
+    &__bottom-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__bottom-left {
+        flex: 0 1 50%;
+    }
+    &__bottom-left-wrap {
+        display: flex;
+    }
+    &__bottom-img {
+        width: 270px;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__bottom-img-body {
+        max-width: 270px;
+        width: 100%;
+        min-height: 270px;
+        background-color: #fff;
+    }
+    &__bottom-img-content {
+        max-width: 270px;
+        width: 100%;
+        min-height: 270px;
+        border: 2px solid #182844;
+        border-radius: 100% 100% 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s ease-in-out;
+        &:hover {
+            border: 2px solid #ff6900;
+        }
+    }
+    &__bottom-img-link {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #182844;
+        text-decoration: underline;
+        font-weight: 700;
+        transition: all .2s ease-in-out;
+    }
+    &__bottom-right {
+        flex: 0 1 50%;
+    }
+    &__bottom-btn {
+        margin-top: 60px;
+    }
+}
