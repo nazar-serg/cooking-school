@@ -1,0 +1,12 @@
+.footer {
+    border-top: 2px solid #EFEDEB;
+    &__inner {
+        padding: 40px 0px 20px;
+        text-align: center;
+        color: #2b343b;
+        img {
+            width: 100px;
+            margin: 0px auto 10px;
+        }
+    }
+}

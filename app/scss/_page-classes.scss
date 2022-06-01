@@ -1,0 +1,87 @@
+.article-classes {
+    padding: 54px 0px;
+    &__row-top {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 992px) {
+            display: block;
+        }
+    }
+    &__row-top-column-left {
+        flex: 0 1 50%;
+    }
+    &__row-top-column-left-title {
+        h1 {
+            font-size: 100px;
+            line-height: calc(110 / 100 * 100%);
+            @media (max-width: 767px) {
+                font-size: 60px;
+            }
+        }
+    }
+    &__row-top-btn {
+        margin: 40px 0px;
+    }
+    &__row-top-column-right {
+        flex: 0 1 50%;
+    }
+    &__row-top-column-right-video {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: 992px) {
+            display: block;
+        }
+    }
+    &__row-top-column-right-video-play {
+        position: absolute;
+        font-size: 60px;
+    }
+    &__row-top-column-right-img {
+        width: 400px;
+        height: 230px;
+        object-fit: cover;
+    }
+    &__row-top-column-right-video-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in-out;
+        i {
+            transform: scale(1, 1);
+            transition: all .2s ease-in-out;
+        }
+        &:hover i {
+            transform: scale(1.2, 1.2);
+        }
+    }
+    &__row-top-column-right-text-offer {
+        background-color: #182844;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 80px 20px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        line-height: 28px;
+        font-size: 14px;
+        width: 50%;
+        @media (max-width: 992px) {
+            margin: 20px auto;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &__content {
+        margin: 120px 0px;
+        h2 {
+            font-size: 60px;
+            line-height: calc(70 / 60 * 100%);
+            padding-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: calc(34 / 18 * 100%);
+        }
+    }
+}

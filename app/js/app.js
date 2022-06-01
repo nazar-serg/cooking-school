@@ -1,3 +1,11 @@
+//slider swiper
+var swiper = new Swiper(".reviews__inner", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 //modal
 $('.modal-toggle').on('click', function(e) {
     e.preventDefault();
@@ -12,10 +20,10 @@ $(document).ready(function() {
     });
 });
 
-//Increment on scroll into Viewport
+//increment on scroll into Viewport
 $(function() {
     var fx = function fx() {
-        $(".why-choose-us__column-right--numeric").each(function(i, el) {
+        $(".about-us-in-numbers__column-numeric").each(function(i, el) {
             var data = parseInt(this.dataset.n, 10);
             var props = {
                 "from": {
@@ -26,7 +34,7 @@ $(function() {
                 }
             };
             $(props.from).animate(props.to, {
-                duration: 4000 * 1,
+                duration: 3000 * 1,
                 step: function(now, fx) {
                     $(el).text(Math.ceil(now));
                 },
@@ -54,3 +62,15 @@ $(function() {
 let date = new Date().getFullYear();
 
 document.getElementById("year").innerHTML = date;
+
+//menu fixed
+window.onscroll = () => {
+    const menu = document.querySelector('.header');
+    const Y = window.scrollY;
+
+    if (Y > 300) {
+        menu.classList.add('menu-fixed');
+    } else if (Y < 100) {
+        menu.classList.remove('menu-fixed');
+    }
+}
